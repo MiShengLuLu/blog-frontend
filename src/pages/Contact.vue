@@ -169,7 +169,7 @@ export default {
       try {
         await axios({
           method: "post",
-          url: `${this.GRIDSOME_API_URL}/contacts`,
+          url: `/contacts`,
           data: this.form,
         });
         alert("发送成功");

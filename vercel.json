@@ -4,5 +4,11 @@
       "source": "/uploads/:match*",
       "destination": "http://106.75.10.28:1337/uploads/:match*"
     }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": ""
+    }
   ]
 }

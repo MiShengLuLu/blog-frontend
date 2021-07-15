@@ -32,7 +32,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html"
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="contact"
                 >Contact</a
               >
             </li>
