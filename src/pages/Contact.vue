@@ -150,7 +150,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import request from "@/utils/request";
 
 export default {
   name: "ContactPage",
@@ -167,7 +167,7 @@ export default {
   methods: {
     async onSubmit() {
       try {
-        await axios({
+        await request({
           method: "post",
           url: `/contacts`,
           data: this.form,

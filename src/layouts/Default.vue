@@ -32,8 +32,8 @@
               >
             </li>
             <li class="nav-item">
-              <g-link class="nav-link px-lg-3 py-3 py-lg-4" to="/contact"
-                >Contact</g-link
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="contact"
+                >Contact</a
               >
             </li>
           </ul>
