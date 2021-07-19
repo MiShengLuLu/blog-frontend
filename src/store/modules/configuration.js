@@ -19,7 +19,7 @@ export default {
   },
   mutations: {
     SET_CONFIGURATION: (state, configuration) => {
-      state.githubUsername = configuration["githubUsername"] || "GitHub-celina"
+      state.githubUsername = configuration["githubUsername"] || "MiShengLuLu"
 
       state.blogTitle = configuration["blogTitle"] || state.githubUsername
 

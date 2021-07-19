@@ -5,11 +5,11 @@
     <el-row>
       <el-col :span="10">
         <div>
-          © 2021 celina520524&emsp;&emsp;
-          <a href="https://github.com/celina19901018" target="_blank">Profile</a
+          © 2021 MiShengLuLu&emsp;&emsp;
+          <a href="https://github.com/MiShengLuLu" target="_blank">Profile</a
           >&emsp;&emsp;
           <a
-            href="https://github.com/celina19901018/blog-frontend"
+            href="https://github.com/MiShengLuLu/blog-frontend"
             target="_blank"
             >VBlog</a
           >

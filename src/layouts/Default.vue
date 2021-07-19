@@ -281,7 +281,6 @@ export default {
   },
   created() {
     this.$store.dispatch("Init");
-    // this.$store.dispatch("GetInfo");
   },
   mounted() {
     this.$nextTick(() => {

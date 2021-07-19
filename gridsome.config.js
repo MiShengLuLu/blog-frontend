@@ -38,8 +38,8 @@ module.exports = {
   //     }
   //   ]
   // },
-  icon: {
-    favicon: './static/logo.svg',
-    touchicon: './static/logsvg'
-  }
+  // icon: {
+  //   favicon: './static/logo.svg',
+  //   touchicon: './static/logsvg'
+  // }
 }

@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       ruleForm: {
-        identifier: "celina520524",
+        identifier: "MiShengLuLu",
         password: "12345678",
       },
       rules: {
