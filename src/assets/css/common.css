@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 分页样式 */
+nav[role="navigation"] a {
+  margin: 0 5px;
+  background-color: #f4f4f5;
+  color: #606266;
+  min-width: 30px;
+  line-height: 28px;
+  border-radius: 2px;
+  display: inline-block;
+}
+nav[role="navigation"] a.active {
+  background-color: #409eff;
+  color: #fff;
+}
+nav[role="navigation"] a:hover {
+  text-decoration: none;
+}
+/* 分页样式 */

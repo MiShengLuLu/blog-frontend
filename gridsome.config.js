@@ -19,8 +19,8 @@ module.exports = {
       options: {
         apiURL: process.env.GRIDSOME_API_URL,
         queryLimit: 1000, // Defaults to 100
-        contentTypes: ['post', 'tag'],
-        singleTypes: ['general'],
+        contentTypes: ['post', 'following', 'follower'],
+        // singleTypes: ['general'],
         // Possibility to login with a Strapi user,
         // when content types are not publicly available (optional).
         // loginData: {
@@ -30,18 +30,16 @@ module.exports = {
       }
     }
   ],
-  templates: {
-    StrapiPost: [
-      {
-        path: '/post/:id',
-        component: './src/templates/Post.vue'
-      }
-    ],
-    StrapiTag: [
-      {
-        path: '/tag/:id',
-        component: './src/templates/Tag.vue'
-      }
-    ]
+  // templates: {
+  //   StrapiPost: [
+  //     {
+  //       path: '/blog/details/:id',
+  //       component: './src/templates/blog/Details.vue'
+  //     }
+  //   ]
+  // },
+  icon: {
+    favicon: './static/logo.svg',
+    touchicon: './static/logsvg'
   }
 }

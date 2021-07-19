@@ -1,12 +1,35 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './assets/css/index.css'
+import Vuex from 'vuex'
+import Store from '@/store'
+import util from '@/utils/util'
+import share from '@/utils/share'
+
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+import 'mavon-editor/dist/markdown/github-markdown.min.css'
+
 
 import DefaultLayout from '~/layouts/Default.vue'
 
-export default function (Vue, { router, head, isClient }) {
+import '@/assets/css/common.css'
+
+export default function (Vue, { appOptions, router, head, isClient }) {
+  Vue.use(Vuex)
+  appOptions.store = new Vuex.Store(Store)
+
+  // 注册 element-ui
+  Vue.use(ElementUI)
+  // 注册 mavonEditor
+  Vue.use(mavonEditor)
+  Vue.prototype.$markdown = function (value) {
+    return mavonEditor.markdownIt.render(value)
+  }
+
   Vue.mixin({
     data() {
       return {
@@ -16,4 +39,7 @@ export default function (Vue, { router, head, isClient }) {
   })
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+
+  Vue.prototype.$util = util
+  Vue.prototype.$share = share
 }
