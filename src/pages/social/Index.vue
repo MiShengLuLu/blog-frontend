@@ -139,8 +139,6 @@ query($page: Int) {
         name
         htmlUrl
         location
-        blog
-        email
         cover {
           url
         }
@@ -160,8 +158,6 @@ query($page: Int) {
         name
         htmlUrl
         location
-        blog
-        email
         cover {
           url
         }
