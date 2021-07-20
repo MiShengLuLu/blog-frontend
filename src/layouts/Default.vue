@@ -49,7 +49,7 @@
         >GitHub主页</a
       >
       <a
-        href="https://github.com/GitHub-Laziji/vblog"
+        href="https://github.com/MiShengLuLu/blog-frontend"
         class="btn"
         target="_blank"
         v-if="!mini"
@@ -357,18 +357,6 @@ export default {
       this.music.currentTime = this.$refs.music.currentTime;
     },
     play() {
-      // this.$refs.music
-      //   .play()
-      //   .then((_) => {
-      //     this.$refs.music.pause();
-      //     this.music.isPlay = !this.$refs.music.paused;
-      //     this.$nextTick(() => {
-      //       document.getElementById("play").blur();
-      //     });
-      //   })
-      //   .catch((err) => {
-      //     console.log(err);
-      //   });
       if (this.$refs.music.paused) {
         this.$refs.music.play();
       } else {

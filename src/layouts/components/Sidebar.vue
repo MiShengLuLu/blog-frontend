@@ -38,7 +38,7 @@
         Token已绑定&nbsp;&nbsp;
         <el-button type="text" @click="cancellation">注销</el-button>
       </div>
-      <div style="margin-top: 10px; text-align: left">
+      <!-- <div style="margin-top: 10px; text-align: left">
         <el-alert
           title="Token获取"
           type="info"
@@ -46,7 +46,7 @@
           :closable="false"
         >
         </el-alert>
-      </div>
+      </div> -->
     </el-card>
     <token-dialog ref="tokenDialog"></token-dialog>
   </div>
