@@ -1,6 +1,6 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
-
+import Vue from 'vue'
 import Vuex from 'vuex'
 import Store from '@/store'
 import util from '@/utils/util'
@@ -18,6 +18,10 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 import '@/assets/css/common.css'
 
+// 注册 mavonEditor
+Vue.use(mavonEditor)
+
+
 export default function (Vue, { appOptions, router, head, isClient }) {
   Vue.use(Vuex)
   appOptions.store = new Vuex.Store(Store)
@@ -25,7 +29,8 @@ export default function (Vue, { appOptions, router, head, isClient }) {
   // 注册 element-ui
   Vue.use(ElementUI)
   // 注册 mavonEditor
-  Vue.component(mavonEditor)
+  // Vue.component('mavonEditor', () => import('mavon-editor'))
+
   Vue.prototype.$markdown = function (value) {
     return mavonEditor.markdownIt.render(value)
   }
