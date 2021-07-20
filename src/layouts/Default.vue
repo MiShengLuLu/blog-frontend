@@ -357,10 +357,20 @@ export default {
       this.music.currentTime = this.$refs.music.currentTime;
     },
     play() {
+      // this.$refs.music
+      //   .play()
+      //   .then((_) => {
+      //     this.$refs.music.pause();
+      //     this.music.isPlay = !this.$refs.music.paused;
+      //     this.$nextTick(() => {
+      //       document.getElementById("play").blur();
+      //     });
+      //   })
+      //   .catch((err) => {
+      //     console.log(err);
+      //   });
       if (this.$refs.music.paused) {
-        setTimeout(() => {
-          this.$refs.music.play();
-        }, 10);
+        this.$refs.music.play();
       } else {
         this.$refs.music.pause();
       }

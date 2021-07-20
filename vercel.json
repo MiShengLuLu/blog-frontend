@@ -10,7 +10,7 @@
     },
     {
       "source": "/music/:match*",
-      "destination": "https://music.163.com/:match*"
+      "destination": "http://m801.music.126.net/:match*"
     }
   ]
 }
