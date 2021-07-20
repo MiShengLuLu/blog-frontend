@@ -6,11 +6,11 @@
     },
     {
       "source": "/api/:match*",
-      "destination": "http://106.75.10.28:1337/:match*"
+      "destination": "/:match*"
     },
     {
-      "source": "/music/:match*",
-      "destination": "http://m801.music.126.net/:match*"
+      "source": "/song/:match*",
+      "destination": "http://music.163.com/song/:match*"
     }
   ]
 }
