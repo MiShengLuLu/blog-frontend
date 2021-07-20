@@ -8,22 +8,22 @@ import request from '@/utils/request'
 
 export const create = data => request({
   method: 'post',
-  url: 'posts',
+  url: '/posts',
   data
 })
 
 export const edit = data => request({
   method: 'put',
-  url: 'posts/' + data.id,
+  url: '/posts/' + data.id,
   data
 })
 
 export const single = id => request({
   method: 'get',
-  url: 'posts/' + id
+  url: '/posts/' + id
 })
 
 export const del = id => request({
   method: 'delete',
-  url: 'posts/' + id
+  url: '/posts/' + id
 })
