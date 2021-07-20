@@ -5,8 +5,8 @@
       "destination": "http://106.75.10.28:1337/uploads/:match*"
     },
     {
-      "source": "/api/:match*",
-      "destination": "/:match*"
+      "source": "/api/(.*)",
+      "destination": "/(.*)"
     },
     {
       "source": "/song/:match*",
