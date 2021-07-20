@@ -358,7 +358,9 @@ export default {
     },
     play() {
       if (this.$refs.music.paused) {
-        this.$refs.music.play();
+        setTimeout(() => {
+          this.$refs.music.play();
+        }, 10);
       } else {
         this.$refs.music.pause();
       }
