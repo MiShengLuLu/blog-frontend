@@ -9,7 +9,10 @@ const token = Cookie.getAttribute('TOKEN_KEY');
 
 const request = axios.create({
   // 配置选项
-  baseURL: '/api'
+  baseURL: '/api',
+  headers: {
+    'content-type': 'application/x-www-form-urlencoded'
+  }
 })
 
 if (token) {

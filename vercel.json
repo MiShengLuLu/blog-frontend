@@ -9,6 +9,18 @@
     {
       "src": "/api/(.*)",
       "dest": ""
+    },
+    {
+      "src": "/blog/details/(?<id>[^/]+)",
+      "dest": "/blog/details?id=$id"
+    },
+    {
+      "src": "/blog/edit/(?<id>[^/]+)",
+      "dest": "/blog/edit?id=$id"
+    },
+    {
+      "src": "/social/details/(?<id>[^/]+)/(?<api>)",
+      "dest": "/social/details?id=$id&api=$api"
     }
   ]
 }
