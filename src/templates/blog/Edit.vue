@@ -15,14 +15,16 @@
             <el-input v-model="form.description" type="textarea"></el-input>
           </el-form-item>
           <el-form-item label="博客正文" prop="content">
-            <mavon-editor
-              @imgAdd="imgAdd"
-              style="max-height: 500px"
-              ref="md"
-              v-model="form.content"
-              :subfield="false"
-              :toolbars="mavonEditorToolbars"
-            />
+            <ClientOnly>
+              <mavon-editor
+                @imgAdd="imgAdd"
+                style="max-height: 500px"
+                ref="md"
+                v-model="form.content"
+                :subfield="false"
+                :toolbars="mavonEditorToolbars"
+              />
+            </ClientOnly>
           </el-form-item>
           <el-form-item>
             <el-button
@@ -44,9 +46,11 @@
 import { mapGetters } from "vuex";
 import TokenDialog from "@/components/common/TokenDialog";
 import * as GistApi from "@/api/blog";
+import { ClientOnly } from "gridsome";
 export default {
   components: {
     TokenDialog,
+    ClientOnly,
   },
   data() {
     return {
