@@ -109,14 +109,15 @@ export default {
     };
   },
   mounted() {
-    console.log(this.$route.query);
     this.getDetail();
   },
   methods: {
     getDetail() {
-      SocialApi[this.$route.query.api + "Single"](this.$route.query.id)
+      SocialApi[this.$route.path.split("/")[1] + "Single"](
+        this.$route.params.id
+      )
         .then((res) => {
-          this.result = res.data[0];
+          this.result = res.data;
         })
         .catch((err) => {
           console.log(err);

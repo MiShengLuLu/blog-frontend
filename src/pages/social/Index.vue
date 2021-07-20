@@ -25,7 +25,7 @@
                   >
                     <i class="el-icon-star-off"></i>&emsp;
                     <a
-                      @click="$router.push(`/social/details?id=${item.node.id}&api=followers`)"
+                      @click="$router.push(`/followers/${item.node.id}`)"
                       style="text-decoration: none; cursor: pointer"
                       >{{ item.node.name }}</a
                     >
@@ -84,9 +84,7 @@
                   >
                     <i class="el-icon-star-off"></i>&emsp;
                     <a
-                      @click="
-                        $router.push(`/social/details?id=${item.node.id}&api=following`)
-                      "
+                      @click="$router.push(`/following/${item.node.id}`)"
                       style="text-decoration: none; cursor: pointer"
                       >{{ item.node.name }}</a
                     >

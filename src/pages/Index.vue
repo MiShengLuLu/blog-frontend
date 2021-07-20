@@ -58,7 +58,7 @@
                 <el-col :span="8">
                   <div style="text-align: right">
                     <el-button
-                      @click="$share('/blog/details?id=' + item.node.id)"
+                      @click="$share('/blog/details/' + item.node.id)"
                       style="padding: 3px 0"
                       type="text"
                       icon="el-icon-share"
@@ -181,7 +181,7 @@ export default {
         });
         return;
       }
-      this.$router.push("/blog/edit?id=" + this.blogs[index].node.id);
+      this.$router.push("/blog/edit/" + this.blogs[index].node.id);
     },
     deleteBlog(index) {
       this.$confirm("是否永久删除该博客?", "提示", {
@@ -210,7 +210,7 @@ export default {
       this.$router.push("/blog/add");
     },
     goDetails(id) {
-      this.$router.push("/blog/details?id=" + id);
+      this.$router.push("/blog/details/" + id);
     },
   },
 };

@@ -81,7 +81,7 @@ export default {
   },
   mounted() {
     this.loading = true;
-    this.blog.id = this.$route.query.id;
+    this.blog.id = this.$route.params.id;
     GistApi.single(this.blog.id)
       .then((response) => {
         let result = response.data;
@@ -102,7 +102,7 @@ export default {
         });
         return;
       }
-      this.$router.push("/blog/edit?id=" + this.blog.id);
+      this.$router.push("/blog/edit/" + this.blog.id);
     },
     more() {
       this.$router.push("/blog");

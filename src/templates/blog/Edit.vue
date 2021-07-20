@@ -118,7 +118,7 @@ export default {
       return;
     }
     this.loading = true;
-    this.form.id = this.$route.query.id;
+    this.form.id = this.$route.params.id;
     GistApi.single(this.form.id)
       .then((response) => {
         let result = response.data;
@@ -155,7 +155,7 @@ export default {
                 message: "发表成功",
                 type: "success",
               });
-              this.$router.push("/blog/details?id=" + result.id);
+              this.$router.push("/blog/details/" + result.id);
             })
             .then(() => {
               this.submitButton.loading = false;

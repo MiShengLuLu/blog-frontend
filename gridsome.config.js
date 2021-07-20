@@ -30,16 +30,27 @@ module.exports = {
       }
     }
   ],
-  // templates: {
-  //   StrapiPost: [
-  //     {
-  //       path: '/blog/details/:id',
-  //       component: './src/templates/blog/Details.vue'
-  //     }
-  //   ]
-  // },
-  // icon: {
-  //   favicon: './static/logo.svg',
-  //   touchicon: './static/logsvg'
-  // }
+  templates: {
+    StrapiPost: [
+      {
+        path: '/blog/details/:id',
+        component: './src/templates/blog/Details.vue'
+      },
+      {
+        name: 'edit',
+        path: '/blog/edit/:id',
+        component: './src/templates/blog/Edit.vue'
+      },
+      {
+        name: 'followers',
+        path: '/followers/:id',
+        component: './src/templates/social/Details.vue'
+      },
+      {
+        name: 'following',
+        path: '/following/:id',
+        component: './src/templates/social/Details.vue'
+      }
+    ]
+  }
 }

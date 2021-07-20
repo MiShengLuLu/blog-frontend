@@ -1,6 +1,6 @@
 export const constantRouterMap = [
   {
-    path: '/blog',
+    path: '/',
     name: 'Blog',
     meta: {
       type: "user",
