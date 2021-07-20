@@ -9,7 +9,7 @@ const token = Cookie.getAttribute('TOKEN_KEY');
 
 const request = axios.create({
   // 配置选项
-  baseURL: process.env.NODE_ENV === 'development' ? `${process.env.GRIDSOME_API_URL}` : '/api'
+  baseURL: '/api'
 })
 
 if (token) {

@@ -50,7 +50,7 @@ export default {
         if (valid) {
           this.$store.dispatch("GetInfo", this.ruleForm).then((res) => {
             if (res) {
-              this.$router.push("/blog");
+              this.$router.push("/");
             }
           });
         } else {
