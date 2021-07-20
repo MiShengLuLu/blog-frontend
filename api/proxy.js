@@ -8,7 +8,7 @@ module.exports = (req, res) => {
     changeOrigin: true,
     pathRewrite: {
       // 通过路径重写，去除请求路径中的 /api
-      //   例如 /api/contacts 将被转发到 http://106.75.10.28:1337/contacts
+      //   例如 /api/posts 将被转发到 http://106.75.10.28:1337/posts
       '^/api': ''
     }
   })(req, res)

@@ -7,6 +7,10 @@
     {
       "source": "/api/(.*)",
       "destination": ""
+    },
+    {
+      "source": "/song?id=864711417&userid=5091848350",
+      "destination": "https://music.163.com/song?id=864711417&userid=5091848350"
     }
   ]
 }
