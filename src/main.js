@@ -25,7 +25,7 @@ export default function (Vue, { appOptions, router, head, isClient }) {
   // 注册 element-ui
   Vue.use(ElementUI)
   // 注册 mavonEditor
-  Vue.use(mavonEditor)
+  Vue.component(mavonEditor)
   Vue.prototype.$markdown = function (value) {
     return mavonEditor.markdownIt.render(value)
   }
