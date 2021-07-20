@@ -1,13 +1,11 @@
 import request from '@/utils/request'
 
-export const followersSingle = params => request({
+export const followersSingle = id => request({
   method: 'get',
-  url: 'followers',
-  params
+  url: '/followers/' + id
 })
 
-export const followingSingle = params => request({
+export const followingSingle = id => request({
   method: 'get',
-  url: 'followings',
-  params
+  url: '/followings/' + id
 })

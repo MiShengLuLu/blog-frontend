@@ -114,7 +114,7 @@ export default {
   },
   methods: {
     getDetail() {
-      SocialApi[this.$route.query.api + "Single"]({ id: this.$route.query.id })
+      SocialApi[this.$route.query.api + "Single"](this.$route.query.id)
         .then((res) => {
           this.result = res.data[0];
         })

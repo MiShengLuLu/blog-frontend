@@ -119,9 +119,9 @@ export default {
     }
     this.loading = true;
     this.form.id = this.$route.query.id;
-    GistApi.single({ id: this.form.id })
+    GistApi.single(this.form.id)
       .then((response) => {
-        let result = response.data[0];
+        let result = response.data;
         this.form["id"] = result["id"];
         this.form["title"] = result["title"];
         this.form["content"] = result["content"];

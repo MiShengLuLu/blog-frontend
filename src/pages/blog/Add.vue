@@ -32,7 +32,7 @@
               :disabled="submitButton.disabled"
               >发表</el-button
             >
-            <el-button @click="$router.push('/user/blog/main')">返回</el-button>
+            <el-button @click="$router.go(-1)">返回</el-button>
           </el-form-item>
         </el-form>
       </el-card>

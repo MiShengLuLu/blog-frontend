@@ -82,9 +82,9 @@ export default {
   mounted() {
     this.loading = true;
     this.blog.id = this.$route.query.id;
-    GistApi.single({ id: this.blog.id })
+    GistApi.single(this.blog.id)
       .then((response) => {
-        let result = response.data[0];
+        let result = response.data;
         this.blog["title"] = result["title"];
         this.blog["content"] = this.$markdown(result["content"]);
         this.blog["description"] = result["description"];

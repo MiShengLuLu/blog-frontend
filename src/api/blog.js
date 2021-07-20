@@ -1,10 +1,10 @@
 import request from '@/utils/request'
 
-export const list = params => request({
-  method: 'get',
-  url: '/posts',
-  params
-})
+// export const list = params => request({
+//   method: 'get',
+//   url: '/posts',
+//   params
+// })
 
 export const create = data => request({
   method: 'post',
@@ -18,10 +18,9 @@ export const edit = data => request({
   data
 })
 
-export const single = params => request({
+export const single = id => request({
   method: 'get',
-  url: '/posts',
-  params
+  url: '/posts/' + id
 })
 
 export const del = id => request({

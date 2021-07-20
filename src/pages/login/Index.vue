@@ -34,7 +34,7 @@ export default {
     return {
       ruleForm: {
         identifier: "MiShengLuLu",
-        password: "12345678",
+        password: "123456789",
       },
       rules: {
         identifier: [

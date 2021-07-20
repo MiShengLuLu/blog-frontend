@@ -58,7 +58,7 @@
                 <el-col :span="8">
                   <div style="text-align: right">
                     <el-button
-                      @click="$share('/user/blog/details?id=' + item.node.id)"
+                      @click="$share('/blog/details?id=' + item.node.id)"
                       style="padding: 3px 0"
                       type="text"
                       icon="el-icon-share"
